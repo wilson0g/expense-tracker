@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPENSE TRACKER | Summary</title>
+    <link rel="stylesheet" href="thecsspart.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>EXPENSE TRACKER</h1>
+        <p>Your Spending Summary</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="expenses.html">Expenses</a>
+        <a href="summary.html" class="active">Summary</a>
+    </nav>
+
+    <main>
+        <section class="card">
+            <h2>Financial Overview</h2>
+
+            <div class="stats">
+                <div class="stat-box">
+                    <h3>Total Budget</h3>
+                    <p id="summaryBudget">GH₵ 0.00</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>Total Spent</h3>
+                    <p id="summarySpent">GH₵ 0.00</p>
+                </div>
+
+                <div class="stat-box">
+                    <h3>Remaining Balance</h3>
+                    <p id="summaryRemaining">GH₵ 0.00</p>
+                </div>
+            </div>
+
+            <p id="budgetStatus"></p>
+        </section>
+
+        <section class="card">
+            <h2>Spending by Category</h2>
+            <p>See how much you have spent in each category.</p>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Amount Spent</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="categoryTable">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Expense Statistics</h2>
+
+            <p>
+                Number of Expenses:
+                <strong id="expenseCount">0</strong>
+            </p>
+
+            <p>
+                Highest Expense:
+                <strong id="highestExpense">None</strong>
+            </p>
+
+            <p>
+                Average Expense:
+                <strong id="averageExpense">GH₵ 0.00</strong>
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>Manage Your Spending</h2>
+            <p>
+                Visit the Expenses page to add or remove records.
+            </p>
+
+            <a href="expenses.html" class="button-link">
+                View Expenses
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 EXPENSE TRACKER | Student Expense Tracker</p>
+    </footer>
+
+</body>
+
+</html>

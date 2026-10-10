@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #263b70;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+header p {
+    margin: 5px 0 0;
+}
+
+
+nav {
+    background-color: #192b54;
+    text-align: center;
+    padding: 14px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #5074bf;
+}
+
+
+main {
+    max-width: 950px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.welcome {
+    text-align: center;
+    padding: 20px;
+}
+
+.welcome h2 {
+    color: #263b70;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    color: #263b70;
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: white;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #5074bf;
+}
+
+
+button,
+.button-link {
+    background-color: #3156a0;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+button:hover,
+.button-link:hover {
+    background-color: #203d77;
+}
+
+form button {
+    margin-top: 10px;
+}
+
+.stats {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    flex: 1;
+    background-color: #e9effb;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat-box h3 {
+    margin: 0;
+    color: #263b70;
+    font-size: 16px;
+}
+
+.stat-box p {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/* Tables */
+
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #263b70;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f6fb;
+}
+
+.delete-btn {
+    background-color: #c0392b;
+    padding: 7px 12px;
+}
+
+.delete-btn:hover {
+    background-color: #922b21;
+}
+
+
+#budgetMessage,
+#expenseMessage,
+#budgetStatus {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.success {
+    color: #237a3b;
+}
+
+.warning {
+    color: #c0392b;
+}
+
+footer {
+    background-color: #192b54;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    .stats {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 4px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+}
